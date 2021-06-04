@@ -1,0 +1,229 @@
+/* X-Small devices (portrait phones, less than 576px)*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .post-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .post-wrap .article h4 {
+    margin: 0.2rem 0;
+    font-weight: 700;
+    padding: 0.5rem 0;
+  }
+  .post-wrap .article p {
+    text-align: justify;
+    margin: 0.5rem 0;
+    margin-bottom: 1.5em;
+    font-size: 1.1rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  /******************HEADER SECTION******************/
+  .navbar .menu-button {
+    display: block;
+  }
+
+  #menu-box {
+    display: none;
+  }
+
+  .navbar .menu-icon {
+    display: none;
+  }
+  .navbar #nav {
+    display: block;
+  }
+  #nav li {
+    font-size: 1rem;
+    list-style: none;
+    display: inline;
+    font-weight: 400;
+  }
+  #nav li a {
+    color: #9698a6;
+    margin: 0 0.3rem;
+    text-decoration: none;
+  }
+  #nav li a:hover {
+    text-decoration: underline;
+  }
+  .navbar .mobile {
+    background: transparent;
+    opacity: 0.9;
+    position: relative;
+    top: 0;
+    height: auto;
+
+    animation: slide 1s;
+  }
+  .menu-button a {
+    background: linear-gradient(to right, #31cc78, #2bb7da);
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 25px;
+  }
+
+  /************BANNER SECTION**********/
+  #banner-section {
+    max-width: 100%;
+  }
+  .banner {
+    display: flex;
+    background-image: url('/images/bg-intro-desktop.svg');
+    background-position: left;
+    background-position-x: 30em;
+    background-repeat: no-repeat;
+    /* background-origin: content-box; */
+    overflow: hidden;
+  }
+
+  #bg-intro {
+    height: 5em;
+  }
+  .banner .intro p {
+    font-size: 1rem;
+    max-width: 25rem;
+    margin-bottom: 1.5rem;
+  }
+  .banner .intro h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    max-width: 18rem;
+    margin-bottom: 1.5rem;
+  }
+  #phones img {
+    display: block;
+    margin-top: -2rem;
+    margin-right: -40em;
+    margin-left: 10rem;
+  }
+  /******************WHY US SECTION**************/
+
+  #why-us .why {
+    width: 40%;
+    text-align: left;
+  }
+  #why-us > div h2 {
+    font-size: 2em;
+  }
+  #why-us .why p {
+    text-align: left;
+  }
+  #why-us .services .icon {
+    text-align: left;
+  }
+  #why-us .services p {
+    font-size: 1em;
+    text-align: justify;
+    max-width: 15em;
+    margin-right: 1em;
+  }
+
+  /***********************blog section************************/
+  #blog {
+    padding: 1.5em 10%;
+  }
+
+  .blog-post h3 {
+    margin: 1.5rem 0;
+  }
+
+  .post-wrap .article {
+    max-width: 18rem;
+  }
+
+  .post-wrap .article img {
+    width: 100%;
+  }
+  .post-wrap .article h4 {
+    margin: 0.2rem 0;
+    font-weight: 700;
+    padding: 0.5rem 0;
+  }
+  .post-wrap .article p:nth-child(2) {
+    text-align: justify;
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+    margin-bottom: 1.5em;
+  }
+
+  /************************FOOTER SECTION***************************/
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  .footer-wrapper .footer-links #f-link-one {
+    margin-right: 2em;
+  }
+  .footer-wrapper .footer-links #f-link-two {
+    margin-left: 2em;
+  }
+}
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  #banner-section {
+    max-width: 100%;
+  }
+  .banner {
+    padding: 1.5em 10%;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('/images/bg-intro-desktop.svg');
+    background-position: left;
+    background-position-x: 60em;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    overflow: hidden;
+  }
+
+  #bg-intro {
+    height: 15em;
+  }
+  .banner .intro p {
+    font-size: 1.5rem;
+    max-width: 35rem;
+    margin-bottom: 1.5rem;
+  }
+  .banner .intro h1 {
+    font-size: 4em;
+    font-weight: 700;
+    max-width: 40rem;
+    margin-top: -8rem;
+    margin-bottom: 1.5rem;
+  }
+  #phones {
+    text-align: right;
+  }
+  #phones img {
+    width: 30em;
+    display: block;
+
+    margin-right: -50em;
+    margin-left: 20rem;
+    animation: phoneResize 5s 2;
+  }
+
+  @keyframes phoneResize {
+    from {
+      width: 20em;
+    }
+    to {
+      width: 30em;
+    }
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+/* @media (min-width: 1200px) {
+  ...;
+} */
